@@ -1,1 +1,15 @@
-// TODO
+.headerContainer {
+  align-items: center;
+  display: flex;
+  height: 105px;
+  justify-content: center;
+}
+
+.headerContent {
+  align-items: center;
+  display: flex;
+  height: 105px;
+  justify-content: flex-start;
+  max-width: 720px;
+  width: 100%;
+}
