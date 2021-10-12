@@ -19,7 +19,7 @@ body {
 }
 
 body, input, textarea, select, button {
-  font: 400 1rem 'Inter', sans-serif;
+  font: 400 1.125rem 'Inter', sans-serif;
 }
 
 @media (max-width: 1080px) {
@@ -40,6 +40,7 @@ button {
 
 a {
   color: inherit;
+  cursor: pointer;
   text-decoration: none;
 }
 
