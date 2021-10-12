@@ -5,6 +5,28 @@
 
 }
 
+.postInfo {
+  align-items: center;
+  display: flex;
+  height: 1.25rem;
+  justify-content: flex-start;
+
+  span {
+    align-items: center;
+    color: var(--gray-250);
+    display: flex;
+    font-size: 0.875rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    margin-right: 1.5rem;
+    text-transform: capitalize;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 @media (max-width: 720px) {
   .container{
     padding: 0 0.625rem;

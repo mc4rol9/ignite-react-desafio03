@@ -70,7 +70,7 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
               <a>
                 <strong>{post.data.title}</strong>
                 <p>{post.data.subtitle}</p>
-                <div className={styles.postsInfo}>
+                <div className={commonStyles.postInfo}>
                   <span>
                     <FiCalendar size={20} />
                     {format(

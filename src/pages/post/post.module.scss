@@ -1,1 +1,35 @@
-// TODO
+.banner {
+  background-color: red;
+  height: 400px;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.post {
+  color: var(--gray-100);
+
+  h1 {
+    line-height: 3.635rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.postContent {
+  margin: 4rem 0 5rem;
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+
+    &:not(:first-of-type) {
+      margin-top: 4rem;
+    }
+  }
+
+  p {
+    color: var(--gray-200);
+  }
+}
