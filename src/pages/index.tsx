@@ -3,9 +3,9 @@ import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Prismic from '@prismicio/client';
 import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 import { FiCalendar, FiUser } from 'react-icons/fi';
 
-import { ptBR } from 'date-fns/locale';
 import Header from '../components/Header';
 
 import { getPrismicClient } from '../services/prismic';

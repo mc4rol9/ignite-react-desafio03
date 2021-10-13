@@ -1,5 +1,12 @@
+.fallback {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
 .banner {
-  background-color: red;
   height: 400px;
   margin-bottom: 80px;
   width: 100%;
