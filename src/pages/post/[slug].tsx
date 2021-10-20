@@ -38,14 +38,15 @@ interface PostProps {
 
 export default function Post({ post }: PostProps): JSX.Element {
   const router = useRouter();
+  const wordsPerMinute = 200;
 
   const handleReadingTime = post.data.content.reduce((count, content) => {
-    const wordsPerMinute = 200;
-    const getWords = RichText.asText(content.body).split('');
-    const countWords = getWords.length;
-
-    return count + Math.ceil(countWords / wordsPerMinute);
+    const getHeadingWords = content.heading.split(' ');
+    const getBodyWords = RichText.asText(content.body).split(' ');
+    return count + getHeadingWords.length + getBodyWords.length;
   }, 0);
+
+  const readingTime = Math.ceil(handleReadingTime / wordsPerMinute);
 
   if (router.isFallback)
     return (
@@ -78,7 +79,7 @@ export default function Post({ post }: PostProps): JSX.Element {
             </span>
 
             <span>
-              <FiClock size={20} /> {`${handleReadingTime} min`}
+              <FiClock size={20} /> {`${readingTime} min`}
             </span>
           </div>
 
